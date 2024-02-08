@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import InputForm from './components/InputForm';
-
-const App = () => {
+import DetailsForm
+ from '../components/DetailsForm';
+const SignIn = () => {
   const [greeting, setGreeting] = useState('Loading...');
   const [mood, setMood] = useState('default');
 
@@ -25,13 +25,10 @@ const App = () => {
 
   return (
     <div className="flex flex-col items-center bg-blue-200 text-blue-500">
-      <h1 className='text-xl m-5'>Athens Parking Landing Page</h1>
-      {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-5" onClick={() => setMood('cruel')}>Cruel</button> */}
-      {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-5" onClick={() => setMood('cruel')}>Exciting</button> */}
-      {/* <h1 className='text-xl'>{greeting}</h1> */}
-      <InputForm/>
+      <h1 className='text-xl m-5'>Please provide your information or else...</h1>
+      <DetailsForm/>
     </div>
   );
 };
 
-export default App;
+export default SignIn;

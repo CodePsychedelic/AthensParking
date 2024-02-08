@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import InputForm from './components/InputForm';
+import InputForm from '../components/InputForm';
 
-const App = () => {
+const SignIn = () => {
   const [greeting, setGreeting] = useState('Loading...');
   const [mood, setMood] = useState('default');
 
@@ -34,4 +34,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default SignIn;
